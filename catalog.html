@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Городок Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navigation">
+       <a href="index.html" class="main-header-logo">
+          <img src="img/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
+       </a>
+       <ul>
+          <li>
+           <a class="info" href="index.html">информация</a>
+          </li>
+          <li>
+           <a class="foto-video" href="index.html">фото и видео</a>
+          </li>
+          <li>
+            <a class="map" href="index.html">карта штата</a>
+          </li>
+          <li>
+           <a class="hotels" href="catalog.html">гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="catalog">
+        <h1>Сайт городка Седона</h1>
+        <img src="img/background-catalog.png" alt="фон формы">
+      </section>
+      <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <p><label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label></p>
+            <p><label><input type="checkbox" name="infrastructure" value="parking">Парковка</label></p>
+            <p><label><input type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <p><label><input type="checkbox" name="house" value="hotel" checked>Гостиница</label></p>
+            <p><label><input type="checkbox" name="house" value="motel" checked>Мотель</label></p>
+            <p><label><input type="checkbox" name="house" value="appartment" checked>Апартаменты</label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки, ₽:</legend>
+            <input type="range" id="priceslider" name="priceslider" min="0" max="3000" step="1">
+            <p>
+              <label>От <input type="text" value="0"></label>
+              <label>До <input type="text" value="3000"></label>
+            </p>
+          </fieldset>
+          <button type="submit">Показать</button>
+      </form>
+        <section>
+          <h2>Найдено: 3</h2>
+          <p>Сортировка:</p>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+          <ul class="cards-hotels">
+            <li class="hotel">
+              <h3>Amara Resort & Spa</h3>
+              <p>Гостиница</p>
+              <p>От 4000 ₽</p>
+              <p>Рейтинг: 8,5</p>
+              <img src="img/Layer-21.png" alt="amara">
+              <button>Подробнее</button>
+              <button>Забронировать</button>
+            </li>
+            <li class="hotel">
+              <h3>Desert Quail Inn</h3>
+              <p>Гостиница</p>
+              <p>От 3000 ₽</p>
+              <p>Рейтинг: 8,9</p>
+              <img src="img/Layer-89.png" alt="desert">
+              <button>Подробнее</button>
+              <button>Забронировать</button>
+            </li>
+            <li class="hotel">
+              <h3>Villas at Poco Diablo</h3>
+              <p>Апартаменты</p>
+              <p>От 2000 ₽</p>
+              <p>Рейтинг: 9,2</p>
+              <img src="img/Rectangle.png" alt="villas">
+              <button>Подробнее</button>
+              <button>Забронировать</button>
+            </li>
+          </ul>
+        </section>
+    </main>
+      <footer class="site-footer">
+      <section class="contacts">
+        <h2>контакты</h2>
+       <ul>
+         <li>#visitSEDONA</li>
+         <li>+7 800 555-86-28</li>
+       </ul>
+      </section>
+      <section class="logo-social">
+        <h2>Социальные сети</h2>
+       <ul>
+         <li>
+           <a href="index.html"><img src="img/twitter.png" alt="лого твиттера"></a>
+         </li>
+         <li>
+           <a href="index.html"><img src="img/fb-icon.png" alt="лого фейсбука"></a>
+         </li>
+         <li>
+           <a href="index.html"><img src="img/youtube.png" alt="лого ютуба"></a>
+         </li>
+       </ul>
+      </section>
+      <section>
+        <h2>Разработчики сайта</h2>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru/"><img src="img/logo_htmlacademy.png" alt="лого htmlacademy"></a>
+     </section>
+    </footer>
+  </body>
+</html>
