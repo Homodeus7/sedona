@@ -1,0 +1,27 @@
+.hidden {
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links-nav {
+  text-align: center;
+  font-family: 'PT Sans';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+
+}
+
+.text_under_banner {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+  line-height: 26px;
+
+}
