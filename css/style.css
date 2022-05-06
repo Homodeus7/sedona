@@ -32,7 +32,7 @@
 }
 
 .page {
-  height: 100%;
+  min-height: 100vh;
 }
 
 .page-body {
@@ -304,15 +304,11 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-row: 120px;
   background-color: var(--white-footer);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
   margin: 0;
   padding: 0;
 }
 
 .footer-contacts {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -321,14 +317,12 @@ img {
 
 .footer-social {
   display: flex;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
   text-align: center;
 }
 
 .social-links {
   display: flex;
-  
+
 }
 
 .social-button {
@@ -347,8 +341,6 @@ img {
 }
 
 .footer-copyright{
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
   text-align: center;
 }
 
@@ -357,15 +349,32 @@ img {
   fill: var(--blue-main);
 }
 
+.page-catalog {
+  display: grid;
+  grid-template-rows: 217px 86px 1fr;
+  align-content: start;
+}
+
 .filter {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
   background: url(/img/background-catalog.png) no-repeat center center fixed;
   background-size: cover;
   color: var(--white);
 }
+.filter-left {
+  margin: 0 60px;
+}
+
+.filter-right {
+  margin-right: 73px;
+}
 
 .filter fieldset {
   border: none;
+
 }
+
 
 .button-transparent {
   text-transform: uppercase;
@@ -380,6 +389,7 @@ img {
   background-color: var(--white);
   border: 2px solid var(--white);
 }
+
 .catalog {
   background-color: var(--white);
 }
@@ -393,7 +403,27 @@ img {
   font-size: 12px;
 }
 
-.breadcrumbs a{
+.sort {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  background-color: var(--white);
+}
+
+.sort h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-left: 73px;
+}
+
+.bread {
+  margin-left: 43px;
+}
+
+.elements-sort {
+  margin-right: 73px;
+}
+
+.sort-list a{
   text-decoration: underline dotted var(--blue-main);
   font-size: 12px;
   line-height: 18px;
@@ -401,21 +431,21 @@ img {
   opacity: 0.3;
 }
 
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
+.sort-list a:hover,
+.sort-list a:focus {
   color: var(--blue-main);
   opacity: 1;
 }
 
-.breadcrumbs a:active {
+.sort-list a:active {
   text-decoration: none;
   color: var(--black);
   opacity: 1;
 }
 
-
 .hotel {
   background-color: var(--white);
+  margin: 0 35px;
 }
 
 .hotel h3{

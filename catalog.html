@@ -27,76 +27,90 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="page-catalog container">
+      <div class="filter-block">
         <h1 class="hidden">Сайт городка Седона</h1>
-        <!-- <img src="img/background-catalog.png" alt="фон формы"> -->
-      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <p><label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label></p>
-            <p><label><input type="checkbox" name="infrastructure" value="parking">Парковка</label></p>
-            <p><label><input type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label></p>
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <p><label><input type="checkbox" name="house" value="hotel" checked>Гостиница</label></p>
-            <p><label><input type="checkbox" name="house" value="motel" checked>Мотель</label></p>
-            <p><label><input type="checkbox" name="house" value="appartment" checked>Апартаменты</label></p>
-          </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки, ₽:</legend>
-            <input type="range" id="priceslider" name="priceslider" min="0" max="3000" step="1">
-            <p>
-              <label>От <input type="text" value="0"></label>
-              <label>До <input type="text" value="3000"></label>
-            </p>
-          </fieldset>
-          <button class="button-transparent" type="submit">Показать</button>
-      </form>
-        <section class="catalog">
-          <h2 class="page-title">Найдено: 3</h2>
+          <!-- <img src="img/background-catalog.png" alt="фон формы"> -->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+          <div class="filter-left">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <p><label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label></p>
+              <p><label><input type="checkbox" name="infrastructure" value="parking">Парковка</label></p>
+              <p><label><input type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label></p>
+            </fieldset>
+          </div>
+          <div class="filter-left-block">
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <p><label><input type="checkbox" name="house" value="hotel" checked>Гостиница</label></p>
+              <p><label><input type="checkbox" name="house" value="motel" checked>Мотель</label></p>
+              <p><label><input type="checkbox" name="house" value="appartment" checked>Апартаменты</label></p>
+            </fieldset>
+          </div>
+          <div class="filter-right">
+            <fieldset>
+              <legend>Стоимость в сутки, ₽:</legend>
+              <input type="range" id="priceslider" name="priceslider" min="0" max="3000" step="1">
+              <p>
+                <label>От <input type="text" value="0"></label>
+                <label>До <input type="text" value="3000"></label>
+              </p>
+            </fieldset>
+            <button class="button-transparent" type="submit">Показать</button>
+          </div>
+        </form>
+      </div>
+      <div class="sort">
+        <h2>Найдено: 3</h2>
+        <div class="bread">
           <p>Сортировка:</p>
-          <ul class="breadcrumbs">
+          <ul class="sort-list">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
-            <li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/></svg></a>
-            </li>
-            <li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="#81B3D2"/></svg></a>
-            </li>
           </ul>
-          <ul class="cards-hotels">
+        </div>
+        <ul class="elements-sort">
+          <li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/></svg></a>
+          </li>
+          <li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11" fill="#81B3D2"/></svg></a>
+          </li>
+        </ul>
+      </div>
+      <section class="catalog">
+        <ul class="cards-hotels">
+          <li class="hotel">
+            <h3>Amara Resort & Spa</h3>
+            <p>Гостиница</p>
+            <p>От 4000 ₽</p>
+            <p class="rate">Рейтинг: 8,5</p>
+            <img src="img/Layer-21.png" alt="amara">
+            <button class="button-search">Подробнее</button>
+            <button class="button">Забронировать</button>
+          </li>
+          <li class="hotel">
+            <h3>Desert Quail Inn</h3>
+            <p>Гостиница</p>
+            <p>От 3000 ₽</p>
+            <p class="rate">Рейтинг: 8,9</p>
+            <img src="img/Layer-89.png" alt="desert">
+            <button class="button-search">Подробнее</button>
+            <button class="button">Забронировать</button>
+          </li>
             <li class="hotel">
-              <h3>Amara Resort & Spa</h3>
-              <p>Гостиница</p>
-              <p>От 4000 ₽</p>
-              <p class="rate">Рейтинг: 8,5</p>
-              <img src="img/Layer-21.png" alt="amara">
-              <button class="button-search">Подробнее</button>
-              <button class="button">Забронировать</button>
-            </li>
-            <li class="hotel">
-              <h3>Desert Quail Inn</h3>
-              <p>Гостиница</p>
-              <p>От 3000 ₽</p>
-              <p class="rate">Рейтинг: 8,9</p>
-              <img src="img/Layer-89.png" alt="desert">
-              <button class="button-search">Подробнее</button>
-              <button class="button">Забронировать</button>
-            </li>
-            <li class="hotel">
-              <h3>Villas at Poco Diablo</h3>
-              <p>Апартаменты</p>
-              <p>От 2000 ₽</p>
-              <p class="rate">Рейтинг: 9,2</p>
-              <img src="img/Rectangle.png" alt="villas">
-              <button class="button-search">Подробнее</button>
-              <button class="button">Забронировать</button>
-            </li>
-          </ul>
-        </section>
+            <h3>Villas at Poco Diablo</h3>
+            <p>Апартаменты</p>
+            <p>От 2000 ₽</p>
+            <p class="rate">Рейтинг: 9,2</p>
+            <img src="img/Rectangle.png" alt="villas">
+            <button class="button-search">Подробнее</button>
+            <button class="button">Забронировать</button>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="site-footer">
       <section class="footer-contacts">
