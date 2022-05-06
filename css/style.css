@@ -32,7 +32,7 @@
 }
 
 .page {
-  min-height: 100vh;
+  height: 100%;
 }
 
 .page-body {
@@ -47,6 +47,11 @@
   color: var(--black);
   background-color: var(--lite-grey);
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .hidden {
@@ -155,20 +160,14 @@ img {
   display: grid;
   color: var(--white);
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
   grid-template-rows: 256px;
 }
 
 .feature-text-asym {
   grid-column: 2 / 3;
+  grid-row: 1;
   background-color: var(--blue-main);
   text-align: center;
-
-}
-
-.feature-img-asym {
-  grid-template-columns: 1;
-  grid-row: 1;
 }
 
 .feature-block-asym h3{
@@ -180,6 +179,7 @@ img {
 .advantages {
   background: var(--white);
 }
+
 .advantages-list {
   display: grid;
   height: 300px;
