@@ -20,16 +20,20 @@
           <img src="img/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
         </a>
         <ul class="site-navigation">
-          <li><a class="info" href="index.html">Информация</a></li>
-          <li><a class="foto-video" href="index.html">Фото и видео</a></li>
-          <li><a class="map" href="index.html">Карта штата</a></li>
-          <li><a class="hotels" href="catalog.html">Гостиницы</a></li>
+          <div class="site-navigation-left">
+            <li><a href="index.html">Информация</a></li>
+            <li><a href="index.html">Фото и видео</a></li>
+          </div>
+          <div class="site-navigation-right">
+            <li><a href="index.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </div>
         </ul>
       </nav>
     </header>
     <main class="page-catalog container">
       <div class="filter-block">
-        <h1 class="hidden">Сайт городка Седона</h1>
+        <h1 class="visually-hidden">Гостиницы городка Седона</h1>
           <!-- <img src="img/background-catalog.png" alt="фон формы"> -->
         <form class="filter" action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-left">
@@ -114,14 +118,14 @@
     </main>
     <footer class="site-footer">
       <section class="footer-contacts">
-        <h2 class="hidden">контакты</h2>
+        <h2 class="visually-hidden">контакты</h2>
        <ul>
          <li>#visitSEDONA</li>
          <li><a href="tel:+78005558628">+7 800 555-86-28</a></li>
        </ul>
       </section>
       <section class="footer-social">
-        <h2 class="hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
        <ul class="social-links">
          <li>
            <a class="social-button" href="index.html">
@@ -147,7 +151,7 @@
        </ul>
       </section>
       <section class="footer-copyright">
-        <h2 class="hidden">Разработчики сайта</h2>
+        <h2 class="visually-hidden">Разработчики сайта</h2>
         <p>Website by</p>
         <a href="https://htmlacademy.ru/">
           <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
