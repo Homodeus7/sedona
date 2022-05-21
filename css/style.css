@@ -87,7 +87,6 @@ img {
 }
 
 .main-navigation {
-  display: grid;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -107,21 +106,20 @@ img {
   min-height: 56px;
   margin: 0;
   padding: 0;
+  padding-left: 73px;
 }
 
-.site-navigation-left {
-  width: 338px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 72px;
+.site-navigation li {
+  width: 20%;
+  justify-content: center;
 }
 
-.site-navigation-right {
-  width: 330px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: 72px;
+.site-navigation li:nth-child(3) {
+  margin-left: 20%;
+}
+
+.site-navigation li:nth-child(4) {
+  ;
 }
 
 .main-header-logo {
