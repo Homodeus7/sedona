@@ -349,7 +349,6 @@ img {
 
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
 
   outline: 5px solid #ff0000;
 }
@@ -370,7 +369,6 @@ img {
   padding-left: 13px;
   box-sizing: border-box;
   background-color: var(--lite-grey);
-  color: var(--black);
 }
 
 .search-item input::placeholder {
@@ -401,8 +399,6 @@ img {
 
 .input-number {
   display: flex;
-  
-
 }
 
 .inupt-plus,
