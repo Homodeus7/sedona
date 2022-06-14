@@ -92,29 +92,53 @@
          </li>
        </ul>
      </section>
-     <section class="search">
+     <section class="search-hotels">
        <h2>заинтересовались?</h2>
        <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
        <div class="main-form">
+        <button class="button button-form">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <button class="button">Поиск гостиницы в Седоне</button>
-          <p>
-            <label for="search-date-start">Дата</label>
+          <p class="search-item">
+            <label for="search-date-start">Дата заезда:</label>
             <input id="search-date-start" type="text" name="date" placeholder="24 апреля 2017">
+            <div class="search-calendar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#CACACA"/>
+                 <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#CACACA"/>
+              </svg>
+            </div>
           </p>
-          <p>
-            <label for="search-date-end">Дата</label>
+          <p class="search-item">
+            <label for="search-date-end">Дата выезда:</label>
             <input id="search-date-end" type="text" name="date" placeholder="4 июля 2017">
+            <div class="search-calendar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#CACACA"/>
+                 <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#CACACA"/>
+              </svg>
+           </div>
           </p>
-          <p>
-            <label for="search-adult">Взрослые:</label>
-            <input id="search-adult" type="text" name="adult">
-            <label for="search-children">Дети:</label>
-            <input id="search-children" type="text" name="children">
+          <p class="search-item">
+            <label class="label-adults" for="search-number-of-adults">
+              Взрослые:
+            </label>
+            <div class="input-number">
+              <button type="button" class="inupt-minus">–</button>
+              <input id="search-number-of-adults" type="text" name="number" value="2">
+              <button type="button" class="inupt-plus">+</button>
+            </div>
+            <label class="label-children" for="search-number-of-children">
+              Дети:
+            </label>
+            <div class="input-number">
+                <button type="button" class="inupt-minus inupt-minus-two">–</button>
+                <input id="search-number-of-children" type="text" name="number" value="0">
+                <button type="button" class="inupt-plus inupt-plus-two">+</button>
+            </div>
           </p>
-          <a class="button-search" href="catalog.html">поиск</a>
+          <button class="button-search button-search-form"><a href="#">Найти</a></button>
         </form>
-        <p><img src="img/map.png" width="1199" height="594" alt="месторасположение городка"></p>
+        <div class="location-sity"></div>
        </div>
      </section>
     </main>
