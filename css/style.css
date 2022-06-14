@@ -35,6 +35,7 @@
   --border-card-hotel:  #E5E5E5;
   --background-toggle: #ababab;
   --rang-control-scale: rgba(255, 255, 255, 0.3);
+  --color-button-input: #A9A9A9;
 }
 
 .page {
@@ -306,52 +307,49 @@ img {
   margin-bottom: 25px;
 }
 
-.search-hotels {
+.hotel-search-section {
   background-color: var(--white);
   text-align: center;
   align-items: center;
 }
 
-.search-hotels h2 {
+.hotel-search-section h2 {
   margin: 0;
   padding-top: 50px;
   font-size: 30px;
   line-height: 24px;
 }
 
-.search-info {
+.hotel-search-info {
   margin: 0 400px;
   margin-bottom: 50px;
 }
 
-.search-form {
+.hotel-search-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   background-color: var(--white);
   width: 568px;
   font-weight: 700;
-  text-align: center;
+
   margin: 0 auto;
-  padding-top: 55px;
 
 }
 
 .search-form p {
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+
 }
 
 .search-item {
   width: 458px;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+
   margin: 0;
   padding: 0;
-  margin-bottom: px;
-  box-sizing: border-box;
+  padding-bottom: 30px;
 
   outline: 5px solid #ff0000;
 }
@@ -359,7 +357,7 @@ img {
 .search-item label {
   width: 95px;
   cursor: pointer;
-  margin-right: 20px;
+  align-self: center;
 }
 
 .search-item input {
@@ -372,37 +370,39 @@ img {
   padding-left: 13px;
   box-sizing: border-box;
   background-color: var(--lite-grey);
+  color: var(--black);
 }
 
-.search-item {
-  position: relative;
+.search-item input::placeholder {
+  color: var(--black);
 }
 
 .search-calendar {
   width: 21px;
   height: 22px;
   position: absolute;
-  top: 9px;
-  left: 429px;
+  top: 2142px;
+  left: 1115px;
   cursor: pointer;
 }
 
 .search-calendar:hover path,
 .search-calendar:focus path {
-  fill: #000000;
+  fill: var(--black);
 }
 
 .search-calendar:active path {
-  fill: #81b3d2;
+  fill:var(--blue-main);
 }
 
 .input-number input {
-  max-width: 38px;
+  max-width: 106px;
 }
 
 .input-number {
   display: flex;
-  justify-content: space-between;
+  
+
 }
 
 .inupt-plus,
@@ -410,24 +410,24 @@ img {
   width: 38px;
   font-size: 24px;
   font-weight: 600;
-  color: #a9a9a9;
+  color: var(--color-button-input);
   outline: none;
   border: none;
   cursor: pointer;
   top: 4px;
-  background-color: #f2f2f2;
+  background-color: var(--lite-grey);
 }
 
 .inupt-plus:hover,
 .inupt-minus:hover,
 .inupt-plus:focus,
 .inupt-minus:focus {
-  color: #000000;
+  color: var(--black);
 }
 
 .inupt-plus:active,
 .inupt-minus:active {
-  color: #81b3d2;
+  color: var(--blue-main);
 }
 
 .button {
